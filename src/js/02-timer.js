@@ -1,5 +1,7 @@
 import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
+import "notiflix/dist/notiflix-3.2.6.min.css";
 
 // flatpickr(selector, options)
 // const options = {
@@ -13,7 +15,8 @@ import "flatpickr/dist/flatpickr.min.css";
 //   };
 // flatpickr("#myID", {});
 
-const ref = {
+
+const refs = {
     input: document.querySelector(`#datetime-picker`),
     button: document.querySelector(`button[data-start]`),
     days: document.querySelector(`.value[data-days]`),
@@ -23,4 +26,8 @@ const ref = {
     label: document.querySelector(`.label`),
 }
 
-ref.button.disabled = true;
+refs.button.disabled = true;
+
+refs.input.addEventListener(`click`, (e) => {
+    e.preventDefault();
+})
