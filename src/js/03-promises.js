@@ -2,7 +2,7 @@ import { Notify } from 'notiflix/build/notiflix-notify-aio'
 import "notiflix/dist/notiflix-3.2.6.min.css";
 
 
-refs = {
+const refs = {
   form: document.querySelector(`.form`),
   firstDelay: document.querySelector(`[name="delay"]`),
   stepDelay: document.querySelector(`[name="step"]`),
