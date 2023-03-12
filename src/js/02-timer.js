@@ -15,7 +15,6 @@ const refs = {
 }
 
 // flatpickr(selector, options)
-// flatpickr("#myID", {});
 const options = {
     enableTime: true,
     time_24hr: true,
